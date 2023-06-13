@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1310</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="minimumSize">
+          <size>
+           <width>350</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QTableWidget" name="tableWidget"/>
+         <widget class="QTreeWidget" name="treeWidget">
+          <column>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1310</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuproject">
+    <property name="title">
+     <string>project</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menurun">
+    <property name="title">
+     <string>run</string>
+    </property>
+    <addaction name="actionrunandstop"/>
+    <addaction name="actionclear"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actionup"/>
+    <addaction name="actiondown"/>
+   </widget>
+   <addaction name="menuproject"/>
+   <addaction name="menurun"/>
+   <addaction name="menuedit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionrunandstop">
+   <property name="icon">
+    <iconset resource="rsp.qrc">
+     <normaloff>:/5</normaloff>:/5</iconset>
+   </property>
+   <property name="text">
+    <string>runandstop</string>
+   </property>
+  </action>
+  <action name="actionclear">
+   <property name="icon">
+    <iconset resource="rsp.qrc">
+     <normaloff>:/3</normaloff>:/3</iconset>
+   </property>
+   <property name="text">
+    <string>clear</string>
+   </property>
+  </action>
+  <action name="actionup">
+   <property name="icon">
+    <iconset resource="rsp.qrc">
+     <normaloff>:/7</normaloff>:/7</iconset>
+   </property>
+   <property name="text">
+    <string>up</string>
+   </property>
+  </action>
+  <action name="actiondown">
+   <property name="icon">
+    <iconset resource="rsp.qrc">
+     <normaloff>:/6</normaloff>:/6</iconset>
+   </property>
+   <property name="text">
+    <string>down</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rsp.qrc"/>
+ </resources>
+ <connections/>
+</ui>

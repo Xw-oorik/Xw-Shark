@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="1">img/51779_stop_icon.png</file>
+        <file alias="2">img/3279062_stop_avoid_cease_end_quit_icon.png</file>
+        <file alias="3">img/3844395_can_trash_icon.png</file>
+        <file alias="4">img/4698573_rocket_spaceship_start_startup_icon.png</file>
+        <file alias="5">img/3830993_begin_play_play button_start playing_icon.png</file>
+        <file alias="6">img/9004818_arrow_direction_down_navigation_icon.png</file>
+        <file alias="7">img/9004838_arrow_up_direction_move_icon.png</file>
+        <file alias="8">img/icon.ico</file>
+    </qresource>
+</RCC>

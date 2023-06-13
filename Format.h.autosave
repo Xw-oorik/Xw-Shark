@@ -1,0 +1,39 @@
+#ifndef FORMAT_H
+#define FORMAT_H
+
+
+//字节数 
+typedef  unsigned char u_char;//1
+typedef  unsigned short u_short;//2
+typedef  unsigned int u_int;//4
+typedef  unsigned long u_long;//4
+
+//mac帧格式
+//目的 MAC 地址、源 MAC 地址和类型/长度字段各占 6 字节、6 字节和 2 字节，共计 14 字节
+typedef struct mac_header{
+    u_char mac_des_host[6];
+    u_char mac_src_host[6];
+    u_short type;
+}MAC_HEADER;
+
+//ip报文格式
+//不满1字节，按一字节算
+typedef struct ip_header{
+    u_char version_length;
+    u_char TOS;
+    u_short total_length;
+    u_short offset;
+    u_short identfication;
+    u_short flags_offset;
+    u_char ttl;
+    u_char protocol;
+    u_short checksum;
+    u_int src_addr;
+    u_int des_addr;
+
+}IP_HEADER;
+
+
+
+
+#endif // FORMAT_H
